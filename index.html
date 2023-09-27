@@ -16,20 +16,21 @@
 <body>
   <div class="signup-page">
     <div class="logo-container">
-      <div class="logo">ReelRatingsDB</div>
       <div class="attribute">Photo by <a
-          href="https://unsplash.com/@fkaregan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samuel
-          Regan-Asante</a> on <a
-          href="https://unsplash.com/photos/wMkaMXTJjlQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        href="https://unsplash.com/@fkaregan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samuel
+        Regan-Asante</a> on <a
+        href="https://unsplash.com/photos/wMkaMXTJjlQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       </div>
     </div>
     <div class="form-container">
       <div class="text-container">
-        <p>
-          Get ratings for movies and tv shows without all the clutter. Find out where to rent or stream. Sign up now to
-          get started.
-        </p>
-        <p>Know before you show.</p>
+        <div class="logo">ReelRatingsDB</div>
+        <div class="text">
+          <p>
+            Get ratings for movies and tv shows and find out where to rent or stream online. All without the clutter. 
+          </p>
+          <p>Sign up now to get started.</p>
+        </div>
       </div>
       <div class="signup-container">
         <form action="" method="post" class="signup-wrapper">
@@ -37,34 +38,34 @@
           <div class="first-row-container">
             <div class="first-name">
               <label for="first-name">First Name</label>
-              <input type="text" />
+              <input type="text" required/>
             </div>
             <div class="last-name">
               <label for="last-name">Last Name</label>
-              <input type="text" />
+              <input type="text" required/>
             </div>
           </div>
           <div class="second-row-container">
             <div class="email">
               <label for="email">Email</label>
-              <input type="email" />
+              <input type="email" required/>
             </div>
             <div class="phone-number">
               <label for="phone-number">Phone Number</label>
-              <input type="tel" />
+              <input type="tel" placeholder="(555) 555-5555" minlength="10" required/>
             </div>
           </div>
           <div class="third-row-container">
             <div class="password">
               <label for="password">Password</label>
-              <input type="password" />
+              <input type="password" minlength="8" required/>
             </div>
             <div class="confirm-password">
               <label for="confirm-password">Confirm Password</label>
-              <input type="password" />
+              <input type="password" minlength="8" required/>
             </div>
           </div>
-          <button>Create Account</button>
+          <button type="submit">Create Account</button>
         </form>
       </div>
       <div class="login">Already have an account? <a href="" class="login-link">Log in</a></div>
